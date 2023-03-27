@@ -1,0 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gbricot <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/03 10:52:34 by gbricot           #+#    #+#             */
+/*   Updated: 2023/03/06 20:54:30 by gbricot          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "get_next_line.h"
+
+int	main(void)
+{
+	int		fd;
+	int		fd1;
+	int		fd2;
+	char	*res;
+
+	fd = open("text.txt", O_RDONLY);
+	fd1 = open("text1.txt", O_RDONLY);
+	fd2 = open("histoire", O_RDONLY);
+	res = get_next_line(fd);
+	printf("%s", res);
+	while (res != NULL)
+	{
+		free(res);
+		res = get_next_line(fd1);
+		if (res)
+			printf("%s", res);
+		free(res);
+		res = get_next_line(fd2);
+		if (res)
+			printf("%s", res);
+		free(res);
+                res = get_next_line(fd);
+                if (res)
+                        printf("%s", res);
+	}
+	free(res);
+	return (0);
+}
