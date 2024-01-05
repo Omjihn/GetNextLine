@@ -30,10 +30,10 @@ If you need to read long lines, it's not recommended to use a very low buffer si
 
 ### WARNING
 
-        This function can cause MEMORY LEAKS.
-        To avoid this, you need to be sure you have read all the file.
-        Be sure that the function returns NULL when you put a valid fd.
-        You can use Valgrind to be sure that all the memory has been freed.
+	This function can cause MEMORY LEAKS.
+	To avoid this, you need to be sure you have read all the file.
+	Be sure that the function returns NULL when you put a valid fd.
+	You can use Valgrind to be sure that all the memory has been freed.
 
 
 This repository contains the get_next_line_bonus files.
@@ -70,10 +70,10 @@ Si vous avez besoin de lire de longues lignes, il n'est pas recommandé d'avoir 
 
 ### ATTENTION
 
-        Cette fonction peut causer des FUITES MEMOIRES.
-        Pour éviter cela, soyez sûr de lire l'intégralité du fichier.
-        Un descripteur de fichier valide retournant NULL permet de s'assurer que la fonction a libéré la mémoire.
-        Vous pouvez utiliser Valgrind afin d'être sûr que toute la mémoire allouée a bien été libérée.
+	Cette fonction peut causer des FUITES MEMOIRES.
+	Pour éviter cela, soyez sûr de lire l'intégralité du fichier.
+	Un descripteur de fichier valide retournant NULL permet de s'assurer que la fonction a libéré la mémoire.
+	Vous pouvez utiliser Valgrind afin d'être sûr que toute la mémoire allouée a bien été libérée.
 
 
 Ce projet contient les fichiers de get_next_line_bonus.
