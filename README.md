@@ -41,10 +41,13 @@ This alternative version allows you to use different file descriptors simultaneo
 
 If you encounter an unexpected error, please send me a detailed report, and I will try to fix it.
 
-This function is one of the first projects at 42 school.
+> [!CAUTION]
+> This function is one of the first projects at 42 school.
 If you are a 42 student, please don't copy-paste this code if you haven't passed this project.
 All the knowlages from this project will be very useful for your cursus.
+
 <details>
+
 <summary>French Manual</summary>
 
 Prototype :
@@ -71,17 +74,18 @@ Si vous avez besoin de lire de longues lignes, il n'est pas recommandé d'avoir 
 ### ATTENTION
 
 	Cette fonction peut causer des FUITES MEMOIRES.
-	Pour éviter cela, soyez sûr de lire l'intégralité du fichier.
+	Pour éviter cela, soyez sûr.e de lire l'intégralité du fichier.
 	Un descripteur de fichier valide retournant NULL permet de s'assurer que la fonction a libéré la mémoire.
-	Vous pouvez utiliser Valgrind afin d'être sûr que toute la mémoire allouée a bien été libérée.
-
+	Vous pouvez utiliser Valgrind afin d'être sûr.e que toute la mémoire allouée a bien été libérée.
 
 Ce projet contient les fichiers de get_next_line_bonus.
 Cette version alternative permet d'utiliser la fonction avec différents descripteurs de fichier en même temps.
 
 Si vous rencontrez une erreur inattendue, merci de m'envoyer un rapport détaillé du problème. J'essaierai de le régler.
 
+
 Cette fonction est l'un des premiers projets de l'école 42.
 Si vous êtes étudiant.e à l'école 42, ne vous contentez pas de copier-coller le code sans être capable de le refaire de vous-même.
 Toutes les connaissances de ce projet seront très utiles pour la suite de votre cursus.
+
 </details>
